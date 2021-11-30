@@ -212,14 +212,11 @@
                   <Font name="Rockwell" size="11" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="7">
+                  <StringArray count="4">
                     <StringItem index="0" value="Select Status"/>
-                    <StringItem index="1" value="Complete"/>
-                    <StringItem index="2" value="Pending"/>
-                    <StringItem index="3" value="Not Assigned"/>
-                    <StringItem index="4" value="Canceled"/>
-                    <StringItem index="5" value=" "/>
-                    <StringItem index="6" value=" "/>
+                    <StringItem index="1" value="Closed"/>
+                    <StringItem index="2" value="Open"/>
+                    <StringItem index="3" value="Canceled"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -644,6 +641,22 @@
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="520" y="410" width="230" height="40"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="error5">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Rockwell" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Canceled or closed task can not be assigned."/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="310" y="410" width="230" height="40"/>
                 </Constraint>
               </Constraints>
             </Component>

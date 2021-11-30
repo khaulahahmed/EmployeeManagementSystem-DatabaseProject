@@ -31,6 +31,7 @@ public class CreateTask extends javax.swing.JFrame {
         error2.setVisible(false);
         error3.setVisible(false);
         error4.setVisible(false);
+        error5.setVisible(false);
 
         db = new Database();
         try {
@@ -97,7 +98,7 @@ public class CreateTask extends javax.swing.JFrame {
         enddate3.setText("Year");
 
         status.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{
-            "Select Status", "Complete", "Pending", "Not Assigned", "Canceled"}));
+            "Select Status", "Closed", "Open", "Canceled"}));
         taskname.requestFocus();
 
     }
@@ -182,6 +183,7 @@ public class CreateTask extends javax.swing.JFrame {
         error2 = new javax.swing.JLabel();
         error3 = new javax.swing.JLabel();
         error4 = new javax.swing.JLabel();
+        error5 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -252,7 +254,7 @@ public class CreateTask extends javax.swing.JFrame {
         jPanel3.setBounds(687, 11, 56, 40);
 
         status.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        status.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Status", "Complete", "Pending", "Not Assigned", "Canceled", " ", " " }));
+        status.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Status", "Closed", "Open", "Canceled" }));
         status.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 statusMouseClicked(evt);
@@ -521,6 +523,12 @@ public class CreateTask extends javax.swing.JFrame {
         jPanel2.add(error4);
         error4.setBounds(520, 410, 230, 40);
 
+        error5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        error5.setForeground(new java.awt.Color(255, 0, 51));
+        error5.setText("Canceled or closed task can not be assigned.");
+        jPanel2.add(error5);
+        error5.setBounds(310, 410, 230, 40);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -706,14 +714,17 @@ public class CreateTask extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteActionPerformed
 
     private void AssignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AssignActionPerformed
-        if (Task.getSelectedRow() != -1) {
+        String st = (String) status.getSelectedItem();
+        if (Task.getSelectedRow() != -1 && !st.equals("Closed") && !st.equals("Canceled")) {
             DefaultTableModel model = (DefaultTableModel) Task.getModel();
             int selectedIndex = Task.getSelectedRow();
             int id = Integer.parseInt(model.getValueAt(selectedIndex, 0).toString());
 
             new TaskAssignment(id).setVisible(true);
             this.setVisible(false);
-        } else {
+        } else if(st.equals("Closed") || st.equals("Cancelled")){
+            error5.setVisible(true);
+        }else {
             error3.setVisible(true);
         }
 
@@ -774,6 +785,7 @@ public class CreateTask extends javax.swing.JFrame {
     private void TaskMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TaskMouseClicked
         error3.setVisible(false);
         error4.setVisible(false);
+        error5.setVisible(false);
 
         //setting text fields as a record is selected
         DefaultTableModel model = (DefaultTableModel) Task.getModel();
@@ -885,6 +897,7 @@ public class CreateTask extends javax.swing.JFrame {
     private javax.swing.JLabel error2;
     private javax.swing.JLabel error3;
     private javax.swing.JLabel error4;
+    private javax.swing.JLabel error5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

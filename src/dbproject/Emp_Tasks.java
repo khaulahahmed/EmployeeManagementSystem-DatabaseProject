@@ -28,6 +28,11 @@ public class Emp_Tasks extends javax.swing.JFrame {
         initComponents();
         this.empid = empid;
 
+        alert1.setVisible(false);
+        error1.setVisible(false);
+        error2.setVisible(false);
+        error3.setVisible(false);
+
 //        error1.setVisible(false);
 //        error2.setVisible(false);
         db = new Database();
@@ -42,16 +47,16 @@ public class Emp_Tasks extends javax.swing.JFrame {
         rs = db.rs;
 
         //setFields();
-        tableupdate();
+        tableupdate("");
 
     }
 
-    private void tableupdate() { //table updated after every change
+    private void tableupdate(String s) { //table updated after every change
         int c;
         try {
 
             pst = con.prepareStatement("select * from Task join employee_Task "
-                    + "using (task_id) where employee_id = ?;");
+                    + "using (task_id) where employee_id = ? " + s);
             pst.setInt(1, empid);
             rs = pst.executeQuery();
 
@@ -104,6 +109,10 @@ public class Emp_Tasks extends javax.swing.JFrame {
         Pending = new javax.swing.JButton();
         Missed = new javax.swing.JButton();
         Finished = new javax.swing.JButton();
+        alert1 = new javax.swing.JLabel();
+        error1 = new javax.swing.JLabel();
+        error2 = new javax.swing.JLabel();
+        error3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -224,9 +233,14 @@ public class Emp_Tasks extends javax.swing.JFrame {
             }
         });
         jPanel1.add(MarkComplete);
-        MarkComplete.setBounds(100, 400, 110, 30);
+        MarkComplete.setBounds(100, 410, 110, 30);
 
         Pending.setText("Pending");
+        Pending.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PendingActionPerformed(evt);
+            }
+        });
         jPanel1.add(Pending);
         Pending.setBounds(480, 50, 73, 23);
 
@@ -237,11 +251,40 @@ public class Emp_Tasks extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Missed);
-        Missed.setBounds(560, 50, 65, 23);
+        Missed.setBounds(570, 50, 65, 23);
 
         Finished.setText("Finished");
+        Finished.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FinishedActionPerformed(evt);
+            }
+        });
         jPanel1.add(Finished);
         Finished.setBounds(650, 50, 71, 23);
+
+        alert1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        alert1.setForeground(new java.awt.Color(102, 255, 102));
+        alert1.setText("Assignment has been marked done.");
+        jPanel1.add(alert1);
+        alert1.setBounds(60, 380, 230, 30);
+
+        error1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        error1.setForeground(new java.awt.Color(255, 0, 51));
+        error1.setText("You have missed the deadline.");
+        jPanel1.add(error1);
+        error1.setBounds(70, 380, 200, 30);
+
+        error2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        error2.setForeground(new java.awt.Color(255, 0, 51));
+        error2.setText("Task has been cancelled.");
+        jPanel1.add(error2);
+        error2.setBounds(80, 390, 200, 20);
+
+        error3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        error3.setForeground(new java.awt.Color(255, 0, 51));
+        error3.setText("Task has been marked done.");
+        jPanel1.add(error3);
+        error3.setBounds(70, 380, 200, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -282,38 +325,52 @@ public class Emp_Tasks extends javax.swing.JFrame {
 
         //emp id of selected record, used to update record
         int id = Integer.parseInt(model.getValueAt(selectedIndex, 0).toString());
+        String status = model.getValueAt(selectedIndex, 4).toString();
+        String hours = model.getValueAt(selectedIndex, 5).toString();
 
-        try {
+        //if hours have not been calculated
+        if (hours.equals("")) {
+            //can ony mark open tasks 
+            if (status.equals("Open")) {
+                try {
 
-            String query = "update Employee_Task set hours = ("
-                    + "(select start_date from Task where Task_ID = ?) - sysdate())/365 "
-                    + " where task_ID = ?";
-            pst = con.prepareStatement(query);
-            pst.setInt(1, id);
-            pst.setInt(2, id);
+                    //Hours = No of days between start date and today, multiplied by 9(office hours)
+                    String query = "update Employee_Task set hours ="
+                            + " (Datediff(sysdate(),(select start_date from Task where Task_ID = ?))*9)"
+                            + " where task_ID = ? and hours is Null";
+                    pst = con.prepareStatement(query);
+                    pst.setInt(1, id);
+                    pst.setInt(2, id);
 
-            pst.executeUpdate();
-            pst.close();
-            JOptionPane.showMessageDialog(this, "Record Updated.");
+                    pst.executeUpdate();
+                    pst.close();
+                    alert1.setVisible(true);
 
-            //Table updated after edits
-            tableupdate();
+                    //Table updated after edits
+                    tableupdate("");
 
-        } catch (SQLException ex) {
-            java.util.logging.Logger.getLogger(Admin_Employee.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(this, ex);
+                } catch (SQLException ex) {
+                    java.util.logging.Logger.getLogger(Admin_Employee.class
+                            .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                    JOptionPane.showMessageDialog(this, ex);
+                }
+            } else if (status.equals("Closed")) {
+                error1.setVisible(true);
+            } else {
+                error2.setVisible(true);
+            }
+        } else {
+            error3.setVisible(true);
         }
-
-        //fields set empty
-//            setfieldsEmpty();
-//            error.setVisible(false);
-//
-//        error1.setVisible(false);
 
     }//GEN-LAST:event_MarkCompleteActionPerformed
 
     private void EtaskMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EtaskMouseClicked
+        alert1.setVisible(false);
+        error1.setVisible(false);
+        error2.setVisible(false);
+        error3.setVisible(false);
+
         //setting text fields as a record is selected
         DefaultTableModel model = (DefaultTableModel) Etask.getModel();
         int selectedIndex = Etask.getSelectedRow();
@@ -332,16 +389,39 @@ public class Emp_Tasks extends javax.swing.JFrame {
 
             if (rs.next()) {
                 taskdet.setText(rs.getString("task_details"));
+
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(Admin_Employee.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Admin_Employee.class
+                    .getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_EtaskMouseClicked
 
     private void MissedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MissedActionPerformed
-        // TODO add your handling code here:
+        //Task that are closed but not done by employee
+        //status is closed and hours not calculated
+
+        String q = " and status = 'closed' and Hours is Null";
+        tableupdate(q);
+
     }//GEN-LAST:event_MissedActionPerformed
+
+    private void PendingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PendingActionPerformed
+        //Task that are open but not done by employee
+        //status is open and hours are not calculated
+
+        String q = " and status = 'Open' and Hours is Null";
+        tableupdate(q);
+    }//GEN-LAST:event_PendingActionPerformed
+
+    private void FinishedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinishedActionPerformed
+        //Task that are closed but not done by employee
+        //hours are calculated
+
+        String q = " and Hours is not Null";
+        tableupdate(q);
+    }//GEN-LAST:event_FinishedActionPerformed
 
     /**
      * @param args the command line arguments
@@ -393,7 +473,11 @@ public class Emp_Tasks extends javax.swing.JFrame {
     private javax.swing.JButton MarkComplete;
     private javax.swing.JButton Missed;
     private javax.swing.JButton Pending;
+    private javax.swing.JLabel alert1;
     private javax.swing.JTextField enddate;
+    private javax.swing.JLabel error1;
+    private javax.swing.JLabel error2;
+    private javax.swing.JLabel error3;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
