@@ -286,7 +286,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         try {
 
             String query = "update Employee_Task set hours = ("
-                    + "(select start_date from Task where Task_ID = ?) - sysdate())/24 "
+                    + "(select start_date from Task where Task_ID = ?) - sysdate())/365 "
                     + " where task_ID = ?";
             pst = con.prepareStatement(query);
             pst.setInt(1, id);
