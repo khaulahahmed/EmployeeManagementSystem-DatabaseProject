@@ -145,16 +145,16 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         sal = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        first_name = new javax.swing.JLabel();
+        Salary_txt = new javax.swing.JLabel();
+        emp_id_txt = new javax.swing.JLabel();
         empid = new javax.swing.JTextField();
-        first_name1 = new javax.swing.JLabel();
+        date_txt = new javax.swing.JLabel();
         date = new javax.swing.JTextField();
-        first_name2 = new javax.swing.JLabel();
+        base_salary = new javax.swing.JLabel();
         salary = new javax.swing.JTextField();
-        first_name3 = new javax.swing.JLabel();
+        bonus_txt = new javax.swing.JLabel();
         bonus = new javax.swing.JTextField();
-        first_name4 = new javax.swing.JLabel();
+        travel_allowance = new javax.swing.JLabel();
         travel = new javax.swing.JTextField();
         empID = new javax.swing.JLabel();
         emp = new javax.swing.JTextField();
@@ -162,12 +162,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         Update = new javax.swing.JButton();
         search1 = new javax.swing.JButton();
         error = new javax.swing.JLabel();
-        first_name5 = new javax.swing.JLabel();
+        medical_allowance = new javax.swing.JLabel();
         medical = new javax.swing.JTextField();
         error3 = new javax.swing.JLabel();
         error4 = new javax.swing.JLabel();
         reset = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -207,17 +206,17 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(279, 90, 480, 350);
 
-        jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
-        jLabel1.setText("Salary");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 40, 330, 43);
+        Salary_txt.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
+        Salary_txt.setForeground(new java.awt.Color(52, 45, 71));
+        Salary_txt.setText("Salary");
+        jPanel1.add(Salary_txt);
+        Salary_txt.setBounds(20, 10, 330, 43);
 
-        first_name.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
-        first_name.setForeground(new java.awt.Color(52, 45, 71));
-        first_name.setText("*Employee ID:");
-        jPanel1.add(first_name);
-        first_name.setBounds(30, 100, 90, 20);
+        emp_id_txt.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
+        emp_id_txt.setForeground(new java.awt.Color(52, 45, 71));
+        emp_id_txt.setText("*Employee ID:");
+        jPanel1.add(emp_id_txt);
+        emp_id_txt.setBounds(30, 100, 90, 20);
 
         empid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,11 +231,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(empid);
         empid.setBounds(30, 120, 90, 30);
 
-        first_name1.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
-        first_name1.setForeground(new java.awt.Color(52, 45, 71));
-        first_name1.setText("Date:");
-        jPanel1.add(first_name1);
-        first_name1.setBounds(140, 100, 90, 20);
+        date_txt.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
+        date_txt.setForeground(new java.awt.Color(52, 45, 71));
+        date_txt.setText("Date:");
+        jPanel1.add(date_txt);
+        date_txt.setBounds(140, 100, 90, 20);
 
         date.setEditable(false);
         date.addActionListener(new java.awt.event.ActionListener() {
@@ -247,11 +246,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(date);
         date.setBounds(140, 120, 100, 30);
 
-        first_name2.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
-        first_name2.setForeground(new java.awt.Color(52, 45, 71));
-        first_name2.setText("*Base Salary:");
-        jPanel1.add(first_name2);
-        first_name2.setBounds(30, 160, 120, 14);
+        base_salary.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
+        base_salary.setForeground(new java.awt.Color(52, 45, 71));
+        base_salary.setText("*Base Salary:");
+        jPanel1.add(base_salary);
+        base_salary.setBounds(30, 160, 120, 14);
 
         salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,11 +260,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(salary);
         salary.setBounds(30, 180, 210, 30);
 
-        first_name3.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
-        first_name3.setForeground(new java.awt.Color(52, 45, 71));
-        first_name3.setText("Bonus:");
-        jPanel1.add(first_name3);
-        first_name3.setBounds(30, 220, 110, 14);
+        bonus_txt.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
+        bonus_txt.setForeground(new java.awt.Color(52, 45, 71));
+        bonus_txt.setText("Bonus:");
+        jPanel1.add(bonus_txt);
+        bonus_txt.setBounds(30, 220, 110, 14);
 
         bonus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -275,11 +274,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(bonus);
         bonus.setBounds(30, 240, 210, 30);
 
-        first_name4.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
-        first_name4.setForeground(new java.awt.Color(52, 45, 71));
-        first_name4.setText("Travel allowance:");
-        jPanel1.add(first_name4);
-        first_name4.setBounds(30, 280, 100, 14);
+        travel_allowance.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
+        travel_allowance.setForeground(new java.awt.Color(52, 45, 71));
+        travel_allowance.setText("Travel allowance:");
+        jPanel1.add(travel_allowance);
+        travel_allowance.setBounds(30, 280, 100, 14);
 
         travel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -346,11 +345,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(error);
         error.setBounds(40, 380, 200, 40);
 
-        first_name5.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
-        first_name5.setForeground(new java.awt.Color(52, 45, 71));
-        first_name5.setText("Medical Allowance:");
-        jPanel1.add(first_name5);
-        first_name5.setBounds(30, 340, 110, 14);
+        medical_allowance.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
+        medical_allowance.setForeground(new java.awt.Color(52, 45, 71));
+        medical_allowance.setText("Medical Allowance:");
+        jPanel1.add(medical_allowance);
+        medical_allowance.setBounds(30, 340, 110, 14);
 
         medical.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -364,7 +363,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         error3.setForeground(new java.awt.Color(255, 0, 51));
         error3.setText("Salary for this month has been entered.");
         jPanel1.add(error3);
-        error3.setBounds(20, 80, 240, 30);
+        error3.setBounds(30, 80, 240, 30);
 
         error4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         error4.setForeground(new java.awt.Color(255, 0, 51));
@@ -381,15 +380,6 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(reset);
         reset.setBounds(630, 450, 90, 20);
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(10, 10, 40, 23);
-
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(52, 45, 71));
@@ -399,6 +389,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jButton2.setBorderPainted(false);
         jButton2.setFocusable(false);
         jButton2.setRequestFocusEnabled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(640, 0, 130, 40);
 
@@ -619,12 +614,12 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         empid.setText("");
     }//GEN-LAST:event_resetActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Dashboard db=new Dashboard();
+         Dashboard db=new Dashboard();
         db.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -663,32 +658,31 @@ public class Ad_Salaryy extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Salary_txt;
     private javax.swing.JButton Update;
     private javax.swing.JButton add;
+    private javax.swing.JLabel base_salary;
     private javax.swing.JTextField bonus;
+    private javax.swing.JLabel bonus_txt;
     private javax.swing.JTextField date;
+    private javax.swing.JLabel date_txt;
     private javax.swing.JTextField emp;
     private javax.swing.JLabel empID;
+    private javax.swing.JLabel emp_id_txt;
     private javax.swing.JTextField empid;
     private javax.swing.JLabel error;
     private javax.swing.JLabel error3;
     private javax.swing.JLabel error4;
-    private javax.swing.JLabel first_name;
-    private javax.swing.JLabel first_name1;
-    private javax.swing.JLabel first_name2;
-    private javax.swing.JLabel first_name3;
-    private javax.swing.JLabel first_name4;
-    private javax.swing.JLabel first_name5;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField medical;
+    private javax.swing.JLabel medical_allowance;
     private javax.swing.JButton reset;
     private javax.swing.JTable sal;
     private javax.swing.JTextField salary;
     private javax.swing.JButton search1;
     private javax.swing.JTextField travel;
+    private javax.swing.JLabel travel_allowance;
     // End of variables declaration//GEN-END:variables
 }

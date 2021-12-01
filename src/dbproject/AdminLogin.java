@@ -55,7 +55,7 @@ public class AdminLogin extends javax.swing.JFrame {
         empIDerror1 = new javax.swing.JLabel();
         pw = new javax.swing.JPasswordField();
         login = new javax.swing.JButton();
-        Back = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -135,13 +135,10 @@ public class AdminLogin extends javax.swing.JFrame {
         jPanel1.add(login);
         login.setBounds(105, 303, 142, 56);
 
-        Back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackActionPerformed(evt);
-            }
-        });
-        jPanel1.add(Back);
-        Back.setBounds(10, 10, 70, 20);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/back_20.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(30, 10, 34, 14);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -225,11 +222,6 @@ public class AdminLogin extends javax.swing.JFrame {
     private void loginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseExited
         setColor(login);
     }//GEN-LAST:event_loginMouseExited
-
-    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        this.setVisible(false);
-        new MainPage().setVisible(true);
-    }//GEN-LAST:event_BackActionPerformed
     public void setColor(JButton button) {
         button.setBackground(new java.awt.Color(47, 27, 71));
         //102,0,204
@@ -287,10 +279,10 @@ public class AdminLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back;
     private javax.swing.JLabel empIDerror1;
     private javax.swing.JTextField empid;
     private javax.swing.JLabel error;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

@@ -296,6 +296,11 @@ public class Emp_Tasks extends javax.swing.JFrame {
         jButton2.setBorderPainted(false);
         jButton2.setFocusable(false);
         jButton2.setRequestFocusEnabled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(640, 0, 130, 40);
 
@@ -435,6 +440,13 @@ public class Emp_Tasks extends javax.swing.JFrame {
         String q = " and Hours is not Null";
         tableupdate(q);
     }//GEN-LAST:event_FinishedActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Dashboard db = new Dashboard();
+        db.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
