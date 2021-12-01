@@ -135,16 +135,15 @@ public class AdminLogin extends javax.swing.JFrame {
         jPanel1.add(login);
         login.setBounds(105, 303, 142, 56);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/back_20.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/back_32.png"))); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 10, 34, 14);
+        jLabel1.setBounds(10, 10, 40, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 759, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 759, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
