@@ -43,10 +43,11 @@ public class PerformanceAnalysis extends javax.swing.JFrame {
         empID2 = new javax.swing.JLabel();
         or = new javax.swing.JLabel();
         searchbemp = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
@@ -67,13 +68,13 @@ public class PerformanceAnalysis extends javax.swing.JFrame {
         jScrollPane1.setBounds(290, 80, 430, 370);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 30)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Performance Analysis");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(20, 20, 340, 40);
 
-        Sbdate.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        Sbdate.setForeground(new java.awt.Color(255, 255, 255));
+        Sbdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        Sbdate.setForeground(new java.awt.Color(52, 45, 71));
         Sbdate.setText("Search by Month:");
         jPanel1.add(Sbdate);
         Sbdate.setBounds(30, 290, 120, 20);
@@ -84,15 +85,15 @@ public class PerformanceAnalysis extends javax.swing.JFrame {
             }
         });
         jPanel1.add(empid);
-        empid.setBounds(110, 190, 80, 30);
+        empid.setBounds(120, 190, 70, 30);
         jPanel1.add(search1);
         search1.setBounds(200, 200, 50, 20);
 
-        Date.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        Date.setForeground(new java.awt.Color(255, 255, 255));
+        Date.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        Date.setForeground(new java.awt.Color(52, 45, 71));
         Date.setText("Month: ");
         jPanel1.add(Date);
-        Date.setBounds(30, 330, 80, 14);
+        Date.setBounds(30, 330, 80, 15);
 
         date.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,23 +105,35 @@ public class PerformanceAnalysis extends javax.swing.JFrame {
         jPanel1.add(search2);
         search2.setBounds(200, 330, 50, 20);
 
-        empID2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        empID2.setForeground(new java.awt.Color(255, 255, 255));
+        empID2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        empID2.setForeground(new java.awt.Color(52, 45, 71));
         empID2.setText("Employee ID:");
         jPanel1.add(empID2);
-        empID2.setBounds(30, 200, 80, 14);
+        empID2.setBounds(30, 200, 90, 15);
 
         or.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        or.setForeground(new java.awt.Color(255, 255, 255));
+        or.setForeground(new java.awt.Color(52, 45, 71));
         or.setText("OR");
         jPanel1.add(or);
         or.setBounds(100, 250, 30, 18);
 
-        searchbemp.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        searchbemp.setForeground(new java.awt.Color(255, 255, 255));
+        searchbemp.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        searchbemp.setForeground(new java.awt.Color(52, 45, 71));
         searchbemp.setText("Search by Employee:");
         jPanel1.add(searchbemp);
-        searchbemp.setBounds(30, 160, 150, 18);
+        searchbemp.setBounds(30, 160, 150, 15);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(620, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -186,6 +199,7 @@ public class PerformanceAnalysis extends javax.swing.JFrame {
     private javax.swing.JTextField date;
     private javax.swing.JLabel empID2;
     private javax.swing.JTextField empid;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

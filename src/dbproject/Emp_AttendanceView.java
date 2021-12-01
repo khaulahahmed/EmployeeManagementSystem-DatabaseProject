@@ -98,6 +98,7 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         month = new javax.swing.JTextField();
         Date2 = new javax.swing.JLabel();
         year = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -111,17 +112,17 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 10, 230, 43);
 
-        Sbdate.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        Sbdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         Sbdate.setForeground(new java.awt.Color(52, 45, 71));
         Sbdate.setText("Search by Date:");
         jPanel1.add(Sbdate);
         Sbdate.setBounds(30, 120, 120, 20);
 
-        Date.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        Date.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         Date.setForeground(new java.awt.Color(52, 45, 71));
         Date.setText("Day: ");
         jPanel1.add(Date);
-        Date.setBounds(30, 160, 80, 14);
+        Date.setBounds(30, 160, 80, 15);
 
         day.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,11 +173,11 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(260, 70, 460, 350);
 
-        Date1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        Date1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         Date1.setForeground(new java.awt.Color(52, 45, 71));
         Date1.setText("Month:");
         jPanel1.add(Date1);
-        Date1.setBounds(30, 210, 80, 14);
+        Date1.setBounds(30, 210, 80, 15);
 
         month.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -186,11 +187,11 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         jPanel1.add(month);
         month.setBounds(70, 200, 110, 30);
 
-        Date2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        Date2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         Date2.setForeground(new java.awt.Color(52, 45, 71));
         Date2.setText("Year:");
         jPanel1.add(Date2);
-        Date2.setBounds(30, 260, 80, 14);
+        Date2.setBounds(30, 260, 80, 15);
 
         year.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +200,18 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         });
         jPanel1.add(year);
         year.setBounds(70, 250, 110, 30);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(620, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -312,6 +325,7 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
     private javax.swing.JTable Employee;
     private javax.swing.JLabel Sbdate;
     private javax.swing.JTextField day;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

@@ -113,6 +113,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         error1 = new javax.swing.JLabel();
         error2 = new javax.swing.JLabel();
         error3 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -149,7 +150,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(312, 85, 414, 360);
 
-        jLabel4.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(52, 45, 71));
         jLabel4.setText("Task ID:");
         jPanel1.add(jLabel4);
@@ -164,7 +165,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         jPanel1.add(taskid);
         taskid.setBounds(20, 100, 271, 32);
 
-        jLabel12.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(52, 45, 71));
         jLabel12.setText("Task Name:");
         jPanel1.add(jLabel12);
@@ -179,7 +180,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         jPanel1.add(taskname);
         taskname.setBounds(20, 160, 271, 32);
 
-        jLabel5.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(52, 45, 71));
         jLabel5.setText("Task Details:");
         jPanel1.add(jLabel5);
@@ -193,7 +194,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(20, 210, 271, 70);
 
-        jLabel10.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(52, 45, 71));
         jLabel10.setText("Start Date:");
         jPanel1.add(jLabel10);
@@ -208,7 +209,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
         jPanel1.add(startdate);
         startdate.setBounds(20, 300, 271, 32);
 
-        jLabel11.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(52, 45, 71));
         jLabel11.setText("End Date:");
         jPanel1.add(jLabel11);
@@ -285,6 +286,18 @@ public class Emp_Tasks extends javax.swing.JFrame {
         error3.setText("Task has been marked done.");
         jPanel1.add(error3);
         error3.setBounds(70, 380, 200, 30);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(640, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -478,6 +491,7 @@ public class Emp_Tasks extends javax.swing.JFrame {
     private javax.swing.JLabel error1;
     private javax.swing.JLabel error2;
     private javax.swing.JLabel error3;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

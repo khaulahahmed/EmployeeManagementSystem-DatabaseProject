@@ -98,24 +98,25 @@ public class View_profile extends javax.swing.JFrame {
         mid = new javax.swing.JTextField();
         first_name11 = new javax.swing.JLabel();
         mname = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Profile");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 10, 260, 43);
 
-        first_name.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name.setForeground(new java.awt.Color(255, 255, 255));
+        first_name.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name.setForeground(new java.awt.Color(52, 45, 71));
         first_name.setText("First Name:");
         jPanel1.add(first_name);
-        first_name.setBounds(50, 80, 80, 14);
+        first_name.setBounds(50, 80, 80, 15);
 
         fname.setEditable(false);
         fname.addActionListener(new java.awt.event.ActionListener() {
@@ -126,11 +127,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(fname);
         fname.setBounds(50, 100, 240, 30);
 
-        first_name1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name1.setForeground(new java.awt.Color(255, 255, 255));
+        first_name1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name1.setForeground(new java.awt.Color(52, 45, 71));
         first_name1.setText("Last Name:");
         jPanel1.add(first_name1);
-        first_name1.setBounds(340, 80, 80, 14);
+        first_name1.setBounds(340, 80, 80, 15);
 
         eid.setEditable(false);
         eid.addActionListener(new java.awt.event.ActionListener() {
@@ -141,11 +142,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(eid);
         eid.setBounds(340, 160, 240, 30);
 
-        first_name2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name2.setForeground(new java.awt.Color(255, 255, 255));
+        first_name2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name2.setForeground(new java.awt.Color(52, 45, 71));
         first_name2.setText("Email:");
         jPanel1.add(first_name2);
-        first_name2.setBounds(50, 140, 80, 14);
+        first_name2.setBounds(50, 140, 80, 15);
 
         email.setEditable(false);
         email.addActionListener(new java.awt.event.ActionListener() {
@@ -156,11 +157,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(email);
         email.setBounds(50, 160, 240, 30);
 
-        first_name3.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name3.setForeground(new java.awt.Color(255, 255, 255));
+        first_name3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name3.setForeground(new java.awt.Color(52, 45, 71));
         first_name3.setText("Address:");
         jPanel1.add(first_name3);
-        first_name3.setBounds(50, 200, 80, 14);
+        first_name3.setBounds(50, 200, 80, 15);
 
         address.setEditable(false);
         address.addActionListener(new java.awt.event.ActionListener() {
@@ -171,11 +172,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(address);
         address.setBounds(50, 220, 240, 50);
 
-        first_name4.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name4.setForeground(new java.awt.Color(255, 255, 255));
+        first_name4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name4.setForeground(new java.awt.Color(52, 45, 71));
         first_name4.setText("Bank Account:");
         jPanel1.add(first_name4);
-        first_name4.setBounds(340, 200, 80, 14);
+        first_name4.setBounds(340, 200, 80, 15);
 
         bankacc.setEditable(false);
         bankacc.addActionListener(new java.awt.event.ActionListener() {
@@ -186,11 +187,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(bankacc);
         bankacc.setBounds(340, 220, 240, 30);
 
-        first_name6.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name6.setForeground(new java.awt.Color(255, 255, 255));
+        first_name6.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name6.setForeground(new java.awt.Color(52, 45, 71));
         first_name6.setText(" Hiredate:");
         jPanel1.add(first_name6);
-        first_name6.setBounds(50, 410, 80, 14);
+        first_name6.setBounds(50, 410, 80, 15);
 
         hiredate.setEditable(false);
         hiredate.addActionListener(new java.awt.event.ActionListener() {
@@ -201,11 +202,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(hiredate);
         hiredate.setBounds(50, 430, 240, 30);
 
-        first_name7.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name7.setForeground(new java.awt.Color(255, 255, 255));
+        first_name7.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name7.setForeground(new java.awt.Color(52, 45, 71));
         first_name7.setText("Department ID:");
         jPanel1.add(first_name7);
-        first_name7.setBounds(50, 290, 80, 14);
+        first_name7.setBounds(50, 290, 80, 15);
 
         deptid.setEditable(false);
         deptid.addActionListener(new java.awt.event.ActionListener() {
@@ -216,11 +217,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(deptid);
         deptid.setBounds(50, 310, 240, 30);
 
-        first_name8.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name8.setForeground(new java.awt.Color(255, 255, 255));
+        first_name8.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name8.setForeground(new java.awt.Color(52, 45, 71));
         first_name8.setText("Password:");
         jPanel1.add(first_name8);
-        first_name8.setBounds(340, 410, 80, 14);
+        first_name8.setBounds(340, 410, 80, 15);
 
         password.setEditable(false);
         password.addActionListener(new java.awt.event.ActionListener() {
@@ -231,11 +232,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(password);
         password.setBounds(340, 430, 240, 30);
 
-        empID.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        empID.setForeground(new java.awt.Color(255, 255, 255));
+        empID.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        empID.setForeground(new java.awt.Color(52, 45, 71));
         empID.setText("Employee ID:");
         jPanel1.add(empID);
-        empID.setBounds(340, 140, 80, 14);
+        empID.setBounds(340, 140, 80, 15);
 
         lname.setEditable(false);
         lname.addActionListener(new java.awt.event.ActionListener() {
@@ -246,11 +247,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(lname);
         lname.setBounds(340, 100, 240, 30);
 
-        first_name9.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name9.setForeground(new java.awt.Color(255, 255, 255));
+        first_name9.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name9.setForeground(new java.awt.Color(52, 45, 71));
         first_name9.setText("Department Name:");
         jPanel1.add(first_name9);
-        first_name9.setBounds(340, 290, 100, 14);
+        first_name9.setBounds(340, 290, 100, 15);
 
         dname.setEditable(false);
         dname.addActionListener(new java.awt.event.ActionListener() {
@@ -261,11 +262,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(dname);
         dname.setBounds(340, 310, 240, 30);
 
-        first_name10.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name10.setForeground(new java.awt.Color(255, 255, 255));
+        first_name10.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name10.setForeground(new java.awt.Color(52, 45, 71));
         first_name10.setText("Manager ID:");
         jPanel1.add(first_name10);
-        first_name10.setBounds(50, 350, 80, 14);
+        first_name10.setBounds(50, 350, 80, 15);
 
         mid.setEditable(false);
         mid.addActionListener(new java.awt.event.ActionListener() {
@@ -276,11 +277,11 @@ public class View_profile extends javax.swing.JFrame {
         jPanel1.add(mid);
         mid.setBounds(50, 370, 240, 30);
 
-        first_name11.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name11.setForeground(new java.awt.Color(255, 255, 255));
+        first_name11.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        first_name11.setForeground(new java.awt.Color(52, 45, 71));
         first_name11.setText("Manager Name:");
         jPanel1.add(first_name11);
-        first_name11.setBounds(340, 350, 90, 14);
+        first_name11.setBounds(340, 350, 90, 15);
 
         mname.setEditable(false);
         mname.addActionListener(new java.awt.event.ActionListener() {
@@ -290,6 +291,18 @@ public class View_profile extends javax.swing.JFrame {
         });
         jPanel1.add(mname);
         mname.setBounds(340, 370, 240, 30);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(500, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -410,6 +423,7 @@ public class View_profile extends javax.swing.JFrame {
     private javax.swing.JLabel first_name9;
     private javax.swing.JTextField fname;
     private javax.swing.JTextField hiredate;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField lname;

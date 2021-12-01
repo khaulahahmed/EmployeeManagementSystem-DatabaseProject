@@ -98,6 +98,7 @@ public class AttendanceView extends javax.swing.JFrame {
         searchbemp = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         Employee = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,7 +113,7 @@ public class AttendanceView extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 20, 230, 43);
 
-        Sbdate.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        Sbdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         Sbdate.setForeground(new java.awt.Color(52, 45, 71));
         Sbdate.setText("Search by Date:");
         jPanel1.add(Sbdate);
@@ -124,7 +125,7 @@ public class AttendanceView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(empid);
-        empid.setBounds(100, 190, 80, 30);
+        empid.setBounds(110, 190, 70, 30);
 
         search1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,11 +135,11 @@ public class AttendanceView extends javax.swing.JFrame {
         jPanel1.add(search1);
         search1.setBounds(190, 200, 50, 20);
 
-        Date.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        Date.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         Date.setForeground(new java.awt.Color(52, 45, 71));
         Date.setText("Date: ");
         jPanel1.add(Date);
-        Date.setBounds(20, 330, 80, 14);
+        Date.setBounds(20, 330, 80, 15);
 
         date.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,11 +151,11 @@ public class AttendanceView extends javax.swing.JFrame {
         jPanel1.add(search2);
         search2.setBounds(190, 330, 50, 20);
 
-        empID2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        empID2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         empID2.setForeground(new java.awt.Color(52, 45, 71));
         empID2.setText("Employee ID:");
         jPanel1.add(empID2);
-        empID2.setBounds(20, 200, 80, 14);
+        empID2.setBounds(20, 200, 90, 15);
 
         markAtt.setBackground(new java.awt.Color(88, 84, 98));
         markAtt.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
@@ -166,7 +167,7 @@ public class AttendanceView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(markAtt);
-        markAtt.setBounds(520, 20, 170, 30);
+        markAtt.setBounds(550, 60, 170, 30);
 
         or.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         or.setForeground(new java.awt.Color(52, 45, 71));
@@ -174,11 +175,11 @@ public class AttendanceView extends javax.swing.JFrame {
         jPanel1.add(or);
         or.setBounds(90, 250, 30, 18);
 
-        searchbemp.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        searchbemp.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         searchbemp.setForeground(new java.awt.Color(52, 45, 71));
         searchbemp.setText("Search by Employee:");
         jPanel1.add(searchbemp);
-        searchbemp.setBounds(20, 160, 150, 18);
+        searchbemp.setBounds(20, 160, 150, 15);
 
         Employee.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 12)); // NOI18N
         Employee.setForeground(new java.awt.Color(52, 45, 71));
@@ -212,6 +213,18 @@ public class AttendanceView extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(260, 100, 460, 310);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(620, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -319,6 +332,7 @@ public class AttendanceView extends javax.swing.JFrame {
     private javax.swing.JTextField date;
     private javax.swing.JLabel empID2;
     private javax.swing.JTextField empid;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

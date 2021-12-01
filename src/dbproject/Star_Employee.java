@@ -32,6 +32,7 @@ public class Star_Employee extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -74,6 +75,18 @@ public class Star_Employee extends javax.swing.JFrame {
         jLabel5.setText("Tasks completed");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(380, 130, 150, 30);
+
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jButton4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(52, 45, 71));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton4.setText("Dashboard");
+        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton4.setBorderPainted(false);
+        jButton4.setFocusable(false);
+        jButton4.setRequestFocusEnabled(false);
+        jPanel1.add(jButton4);
+        jButton4.setBounds(640, 20, 130, 40);
 
         jButton1.setBackground(new java.awt.Color(105, 103, 115));
         jButton1.setFont(new java.awt.Font("Rockwell", 1, 15)); // NOI18N
@@ -195,6 +208,7 @@ public class Star_Employee extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

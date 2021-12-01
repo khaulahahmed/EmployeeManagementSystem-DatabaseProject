@@ -149,6 +149,7 @@ public class Admin_Dept extends javax.swing.JFrame {
         error3 = new javax.swing.JLabel();
         error4 = new javax.swing.JLabel();
         error5 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -198,11 +199,11 @@ public class Admin_Dept extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(20, 10, 330, 43);
 
-        first_name.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         first_name.setForeground(new java.awt.Color(52, 45, 71));
         first_name.setText("*Department ID:");
         jPanel1.add(first_name);
-        first_name.setBounds(20, 100, 90, 14);
+        first_name.setBounds(20, 100, 110, 15);
 
         DeptID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,11 +218,11 @@ public class Admin_Dept extends javax.swing.JFrame {
         jPanel1.add(DeptID);
         DeptID.setBounds(20, 120, 240, 30);
 
-        first_name1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         first_name1.setForeground(new java.awt.Color(52, 45, 71));
         first_name1.setText("*Department Name:");
         jPanel1.add(first_name1);
-        first_name1.setBounds(20, 170, 130, 14);
+        first_name1.setBounds(20, 170, 130, 15);
 
         DeptName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -231,11 +232,11 @@ public class Admin_Dept extends javax.swing.JFrame {
         jPanel1.add(DeptName);
         DeptName.setBounds(20, 190, 240, 30);
 
-        first_name2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         first_name2.setForeground(new java.awt.Color(52, 45, 71));
         first_name2.setText("*Manager ID:");
         jPanel1.add(first_name2);
-        first_name2.setBounds(20, 230, 120, 14);
+        first_name2.setBounds(20, 230, 120, 15);
 
         MgrID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,25 +292,37 @@ public class Admin_Dept extends javax.swing.JFrame {
         error2.setForeground(new java.awt.Color(255, 0, 51));
         error2.setText("Numeric values only");
         jPanel1.add(error2);
-        error2.setBounds(110, 100, 200, 15);
+        error2.setBounds(123, 100, 200, 15);
 
         error3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         error3.setForeground(new java.awt.Color(255, 0, 51));
         error3.setText("Numeric values only");
         jPanel1.add(error3);
-        error3.setBounds(100, 230, 200, 15);
+        error3.setBounds(110, 230, 200, 15);
 
         error4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         error4.setForeground(new java.awt.Color(255, 0, 51));
         error4.setText("Invalid Manager ID");
         jPanel1.add(error4);
-        error4.setBounds(100, 230, 200, 15);
+        error4.setBounds(110, 230, 200, 15);
 
         error5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         error5.setForeground(new java.awt.Color(255, 0, 51));
         error5.setText("Department already exists.");
         jPanel1.add(error5);
         error5.setBounds(20, 80, 200, 20);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(620, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -547,6 +560,7 @@ public class Admin_Dept extends javax.swing.JFrame {
     private javax.swing.JLabel first_name;
     private javax.swing.JLabel first_name1;
     private javax.swing.JLabel first_name2;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

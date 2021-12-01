@@ -91,6 +91,7 @@ public class Employee_Salary extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         year = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,7 +149,7 @@ public class Employee_Salary extends javax.swing.JFrame {
         jPanel1.add(search1);
         search1.setBounds(530, 70, 80, 30);
 
-        jLabel2.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(52, 45, 71));
         jLabel2.setText("Month:");
         jPanel1.add(jLabel2);
@@ -162,11 +163,23 @@ public class Employee_Salary extends javax.swing.JFrame {
         jPanel1.add(year);
         year.setBounds(360, 70, 130, 25);
 
-        jLabel3.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(52, 45, 71));
         jLabel3.setText("Year:");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(310, 70, 51, 20);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(620, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -273,6 +286,7 @@ public class Employee_Salary extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Month;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

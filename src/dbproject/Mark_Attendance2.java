@@ -82,11 +82,11 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
         error2 = new javax.swing.JLabel();
         error3 = new javax.swing.JLabel();
         error4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(730, 425));
         jPanel1.setLayout(null);
 
@@ -114,7 +114,7 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(view);
-        view.setBounds(530, 20, 160, 30);
+        view.setBounds(540, 45, 160, 30);
 
         Employee.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 12)); // NOI18N
         Employee.setForeground(new java.awt.Color(52, 45, 71));
@@ -154,13 +154,13 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
         jScrollPane1.setBounds(220, 80, 480, 300);
 
         empID.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        empID.setForeground(new java.awt.Color(255, 255, 255));
+        empID.setForeground(new java.awt.Color(52, 45, 71));
         empID.setText("*Employee ID:");
         jPanel1.add(empID);
         empID.setBounds(30, 90, 90, 15);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Attendance");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(60, 10, 210, 43);
@@ -178,7 +178,7 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
         save.setBounds(50, 335, 120, 30);
 
         empID1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        empID1.setForeground(new java.awt.Color(255, 255, 255));
+        empID1.setForeground(new java.awt.Color(52, 45, 71));
         empID1.setText("Mark:");
         jPanel1.add(empID1);
         empID1.setBounds(30, 210, 80, 15);
@@ -194,7 +194,7 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
         date.setBounds(30, 170, 160, 30);
 
         empID2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        empID2.setForeground(new java.awt.Color(255, 255, 255));
+        empID2.setForeground(new java.awt.Color(52, 45, 71));
         empID2.setText("Date:");
         jPanel1.add(empID2);
         empID2.setBounds(30, 150, 80, 15);
@@ -242,14 +242,17 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
         jPanel1.add(error4);
         error4.setBounds(30, 310, 220, 30);
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(10, 13, 40, 30);
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(600, 0, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -343,11 +346,6 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
         error3.setVisible(false);
         error4.setVisible(false);
     }//GEN-LAST:event_empidKeyTyped
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        this.setVisible(false);
-        new Dashboard().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private boolean checkfields() { //check if required fields are there
         if (empid.getText().equals("")) {
@@ -478,7 +476,7 @@ public class Mark_Attendance2 extends javax.swing.JFrame {
     private javax.swing.JLabel error2;
     private javax.swing.JLabel error3;
     private javax.swing.JLabel error4;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

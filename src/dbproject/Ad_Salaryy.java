@@ -168,6 +168,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         error4 = new javax.swing.JLabel();
         reset = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -212,11 +213,11 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(20, 40, 330, 43);
 
-        first_name.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         first_name.setForeground(new java.awt.Color(52, 45, 71));
         first_name.setText("*Employee ID:");
         jPanel1.add(first_name);
-        first_name.setBounds(30, 100, 80, 20);
+        first_name.setBounds(30, 100, 90, 20);
 
         empid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -231,7 +232,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(empid);
         empid.setBounds(30, 120, 90, 30);
 
-        first_name1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name1.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         first_name1.setForeground(new java.awt.Color(52, 45, 71));
         first_name1.setText("Date:");
         jPanel1.add(first_name1);
@@ -246,7 +247,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(date);
         date.setBounds(140, 120, 100, 30);
 
-        first_name2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name2.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         first_name2.setForeground(new java.awt.Color(52, 45, 71));
         first_name2.setText("*Base Salary:");
         jPanel1.add(first_name2);
@@ -260,7 +261,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(salary);
         salary.setBounds(30, 180, 210, 30);
 
-        first_name3.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name3.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         first_name3.setForeground(new java.awt.Color(52, 45, 71));
         first_name3.setText("Bonus:");
         jPanel1.add(first_name3);
@@ -274,7 +275,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(bonus);
         bonus.setBounds(30, 240, 210, 30);
 
-        first_name4.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name4.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         first_name4.setForeground(new java.awt.Color(52, 45, 71));
         first_name4.setText("Travel allowance:");
         jPanel1.add(first_name4);
@@ -288,7 +289,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(travel);
         travel.setBounds(30, 300, 210, 30);
 
-        empID.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        empID.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         empID.setForeground(new java.awt.Color(52, 45, 71));
         empID.setText("Employee ID:");
         jPanel1.add(empID);
@@ -345,7 +346,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         jPanel1.add(error);
         error.setBounds(40, 380, 200, 40);
 
-        first_name5.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
+        first_name5.setFont(new java.awt.Font("Rockwell", 1, 11)); // NOI18N
         first_name5.setForeground(new java.awt.Color(52, 45, 71));
         first_name5.setText("Medical Allowance:");
         jPanel1.add(first_name5);
@@ -388,6 +389,18 @@ public class Ad_Salaryy extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1);
         jButton1.setBounds(10, 10, 40, 23);
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(52, 45, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dbproject/dashboard_32.png"))); // NOI18N
+        jButton2.setText("Dashboard");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 45, 71)));
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
+        jPanel1.add(jButton2);
+        jButton2.setBounds(640, 0, 130, 40);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 775, 500);
@@ -667,6 +680,7 @@ public class Ad_Salaryy extends javax.swing.JFrame {
     private javax.swing.JLabel first_name4;
     private javax.swing.JLabel first_name5;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
