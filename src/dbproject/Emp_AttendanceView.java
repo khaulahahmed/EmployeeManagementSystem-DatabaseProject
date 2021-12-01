@@ -101,24 +101,24 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Attendance ");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 10, 230, 43);
 
         Sbdate.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        Sbdate.setForeground(new java.awt.Color(255, 255, 255));
+        Sbdate.setForeground(new java.awt.Color(52, 45, 71));
         Sbdate.setText("Search by Date:");
         jPanel1.add(Sbdate);
         Sbdate.setBounds(30, 120, 120, 20);
 
         Date.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        Date.setForeground(new java.awt.Color(255, 255, 255));
+        Date.setForeground(new java.awt.Color(52, 45, 71));
         Date.setText("Day: ");
         jPanel1.add(Date);
         Date.setBounds(30, 160, 80, 14);
@@ -173,7 +173,7 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         jScrollPane1.setBounds(260, 70, 460, 350);
 
         Date1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        Date1.setForeground(new java.awt.Color(255, 255, 255));
+        Date1.setForeground(new java.awt.Color(52, 45, 71));
         Date1.setText("Month:");
         jPanel1.add(Date1);
         Date1.setBounds(30, 210, 80, 14);
@@ -187,7 +187,7 @@ public class Emp_AttendanceView extends javax.swing.JFrame {
         month.setBounds(70, 200, 110, 30);
 
         Date2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        Date2.setForeground(new java.awt.Color(255, 255, 255));
+        Date2.setForeground(new java.awt.Color(52, 45, 71));
         Date2.setText("Year:");
         jPanel1.add(Date2);
         Date2.setBounds(30, 260, 80, 14);

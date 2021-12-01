@@ -94,7 +94,7 @@ public class Employee_Salary extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
@@ -126,7 +126,7 @@ public class Employee_Salary extends javax.swing.JFrame {
         jScrollPane1.setBounds(30, 110, 680, 360);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Employee Salary Report");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 10, 510, 43);
@@ -149,7 +149,7 @@ public class Employee_Salary extends javax.swing.JFrame {
         search1.setBounds(530, 70, 80, 30);
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(52, 45, 71));
         jLabel2.setText("Month:");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(110, 70, 51, 20);
@@ -163,7 +163,7 @@ public class Employee_Salary extends javax.swing.JFrame {
         year.setBounds(360, 70, 130, 25);
 
         jLabel3.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(52, 45, 71));
         jLabel3.setText("Year:");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(310, 70, 51, 20);

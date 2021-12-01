@@ -5,7 +5,7 @@
  */
 package dbproject;
 
-import com.mysql.cj.exceptions.CJException;
+//import com.mysql.cj.exceptions.CJException;
 import java.sql.*;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -192,7 +192,7 @@ public class CreateTask extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(47, 27, 71));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
         taskdet.setColumns(20);
@@ -269,25 +269,25 @@ public class CreateTask extends javax.swing.JFrame {
         status.setBounds(20, 390, 271, 29);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(52, 45, 71));
         jLabel2.setText("Tasks");
         jPanel2.add(jLabel2);
         jLabel2.setBounds(20, 10, 337, 44);
 
         jLabel4.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(52, 45, 71));
         jLabel4.setText("Task ID:");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(20, 60, 160, 19);
 
         jLabel5.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(52, 45, 71));
         jLabel5.setText("*Task Details:");
         jPanel2.add(jLabel5);
         jLabel5.setBounds(20, 170, 163, 22);
 
         jLabel10.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setForeground(new java.awt.Color(52, 45, 71));
         jLabel10.setText("*Start Date: ");
         jPanel2.add(jLabel10);
         jLabel10.setBounds(20, 270, 160, 19);
@@ -314,7 +314,7 @@ public class CreateTask extends javax.swing.JFrame {
         startdate3.setBounds(210, 290, 80, 32);
 
         jLabel11.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setForeground(new java.awt.Color(52, 45, 71));
         jLabel11.setText("*End Date:");
         jPanel2.add(jLabel11);
         jLabel11.setBounds(20, 320, 160, 19);
@@ -377,7 +377,7 @@ public class CreateTask extends javax.swing.JFrame {
         Rate.setBounds(520, 440, 180, 30);
 
         jLabel12.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setForeground(new java.awt.Color(52, 45, 71));
         jLabel12.setText("*Task Name:");
         jPanel2.add(jLabel12);
         jLabel12.setBounds(20, 120, 160, 19);

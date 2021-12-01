@@ -152,7 +152,7 @@ public class Admin_Dept extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
@@ -193,13 +193,13 @@ public class Admin_Dept extends javax.swing.JFrame {
         jScrollPane1.setBounds(270, 60, 460, 340);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Departments");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(20, 10, 330, 43);
 
         first_name.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name.setForeground(new java.awt.Color(255, 255, 255));
+        first_name.setForeground(new java.awt.Color(52, 45, 71));
         first_name.setText("*Department ID:");
         jPanel1.add(first_name);
         first_name.setBounds(20, 100, 90, 14);
@@ -218,7 +218,7 @@ public class Admin_Dept extends javax.swing.JFrame {
         DeptID.setBounds(20, 120, 240, 30);
 
         first_name1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name1.setForeground(new java.awt.Color(255, 255, 255));
+        first_name1.setForeground(new java.awt.Color(52, 45, 71));
         first_name1.setText("*Department Name:");
         jPanel1.add(first_name1);
         first_name1.setBounds(20, 170, 130, 14);
@@ -232,7 +232,7 @@ public class Admin_Dept extends javax.swing.JFrame {
         DeptName.setBounds(20, 190, 240, 30);
 
         first_name2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name2.setForeground(new java.awt.Color(255, 255, 255));
+        first_name2.setForeground(new java.awt.Color(52, 45, 71));
         first_name2.setText("*Manager ID:");
         jPanel1.add(first_name2);
         first_name2.setBounds(20, 230, 120, 14);

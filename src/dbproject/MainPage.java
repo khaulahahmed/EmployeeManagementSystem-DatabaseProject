@@ -41,15 +41,16 @@ public class MainPage extends javax.swing.JFrame {
         setBackground(new java.awt.Color(47, 27, 71));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
         title.setFont(new java.awt.Font("Rockwell Condensed", 1, 48)); // NOI18N
-        title.setForeground(new java.awt.Color(255, 255, 255));
+        title.setForeground(new java.awt.Color(52, 45, 71));
         title.setText("Employee Management System");
         jPanel1.add(title);
         title.setBounds(60, 240, 710, 100);
 
+        image.setBackground(new java.awt.Color(255, 255, 255));
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Untitled design (4).png"))); // NOI18N
         jPanel1.add(image);
         image.setBounds(0, 40, 660, 250);

@@ -81,7 +81,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(755, 520));
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
@@ -133,13 +133,13 @@ public class Admin_Employee extends javax.swing.JFrame {
         jScrollPane1.setBounds(289, 90, 430, 340);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Employee");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(60, 10, 180, 43);
 
         first_name.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name.setForeground(new java.awt.Color(255, 255, 255));
+        first_name.setForeground(new java.awt.Color(52, 45, 71));
         first_name.setText("*First Name:");
         jPanel1.add(first_name);
         first_name.setBounds(30, 70, 80, 20);
@@ -153,7 +153,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         fname.setBounds(30, 90, 110, 30);
 
         first_name1.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name1.setForeground(new java.awt.Color(255, 255, 255));
+        first_name1.setForeground(new java.awt.Color(52, 45, 71));
         first_name1.setText("*Last Name:");
         jPanel1.add(first_name1);
         first_name1.setBounds(150, 70, 80, 20);
@@ -167,7 +167,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         lname.setBounds(150, 90, 120, 30);
 
         first_name2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name2.setForeground(new java.awt.Color(255, 255, 255));
+        first_name2.setForeground(new java.awt.Color(52, 45, 71));
         first_name2.setText("Email:");
         jPanel1.add(first_name2);
         first_name2.setBounds(30, 120, 80, 20);
@@ -183,7 +183,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         email.setBounds(30, 140, 240, 30);
 
         first_name3.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name3.setForeground(new java.awt.Color(255, 255, 255));
+        first_name3.setForeground(new java.awt.Color(52, 45, 71));
         first_name3.setText("*Address:");
         jPanel1.add(first_name3);
         first_name3.setBounds(30, 170, 80, 20);
@@ -197,7 +197,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         address.setBounds(30, 190, 240, 30);
 
         first_name4.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name4.setForeground(new java.awt.Color(255, 255, 255));
+        first_name4.setForeground(new java.awt.Color(52, 45, 71));
         first_name4.setText("*Bank Account:");
         jPanel1.add(first_name4);
         first_name4.setBounds(30, 220, 80, 20);
@@ -211,7 +211,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         bankacc.setBounds(30, 240, 240, 30);
 
         first_name6.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name6.setForeground(new java.awt.Color(255, 255, 255));
+        first_name6.setForeground(new java.awt.Color(52, 45, 71));
         first_name6.setText("Hiredate:");
         jPanel1.add(first_name6);
         first_name6.setBounds(30, 320, 80, 20);
@@ -227,7 +227,7 @@ public class Admin_Employee extends javax.swing.JFrame {
         hiredate.setBounds(30, 340, 240, 30);
 
         first_name7.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name7.setForeground(new java.awt.Color(255, 255, 255));
+        first_name7.setForeground(new java.awt.Color(52, 45, 71));
         first_name7.setText("Department ID:");
         jPanel1.add(first_name7);
         first_name7.setBounds(30, 270, 80, 20);
@@ -241,13 +241,13 @@ public class Admin_Employee extends javax.swing.JFrame {
         deptid.setBounds(30, 290, 240, 30);
 
         first_name8.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        first_name8.setForeground(new java.awt.Color(255, 255, 255));
+        first_name8.setForeground(new java.awt.Color(52, 45, 71));
         first_name8.setText("*Password:");
         jPanel1.add(first_name8);
         first_name8.setBounds(30, 370, 80, 20);
 
         empID.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        empID.setForeground(new java.awt.Color(255, 255, 255));
+        empID.setForeground(new java.awt.Color(52, 45, 71));
         empID.setText("Employee ID:");
         jPanel1.add(empID);
         empID.setBounds(440, 60, 80, 14);

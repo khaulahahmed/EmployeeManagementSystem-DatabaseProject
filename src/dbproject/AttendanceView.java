@@ -101,18 +101,19 @@ public class AttendanceView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(52, 45, 71));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(52, 45, 71));
         jPanel1.setPreferredSize(new java.awt.Dimension(744, 490));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(52, 45, 71));
         jLabel1.setText("Attendance ");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 20, 230, 43);
 
         Sbdate.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        Sbdate.setForeground(new java.awt.Color(255, 255, 255));
+        Sbdate.setForeground(new java.awt.Color(52, 45, 71));
         Sbdate.setText("Search by Date:");
         jPanel1.add(Sbdate);
         Sbdate.setBounds(20, 290, 120, 20);
@@ -134,7 +135,7 @@ public class AttendanceView extends javax.swing.JFrame {
         search1.setBounds(190, 200, 50, 20);
 
         Date.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        Date.setForeground(new java.awt.Color(255, 255, 255));
+        Date.setForeground(new java.awt.Color(52, 45, 71));
         Date.setText("Date: ");
         jPanel1.add(Date);
         Date.setBounds(20, 330, 80, 14);
@@ -150,7 +151,7 @@ public class AttendanceView extends javax.swing.JFrame {
         search2.setBounds(190, 330, 50, 20);
 
         empID2.setFont(new java.awt.Font("Rockwell", 0, 11)); // NOI18N
-        empID2.setForeground(new java.awt.Color(255, 255, 255));
+        empID2.setForeground(new java.awt.Color(52, 45, 71));
         empID2.setText("Employee ID:");
         jPanel1.add(empID2);
         empID2.setBounds(20, 200, 80, 14);
@@ -168,13 +169,13 @@ public class AttendanceView extends javax.swing.JFrame {
         markAtt.setBounds(520, 20, 170, 30);
 
         or.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        or.setForeground(new java.awt.Color(255, 255, 255));
+        or.setForeground(new java.awt.Color(52, 45, 71));
         or.setText("OR");
         jPanel1.add(or);
         or.setBounds(90, 250, 30, 18);
 
         searchbemp.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        searchbemp.setForeground(new java.awt.Color(255, 255, 255));
+        searchbemp.setForeground(new java.awt.Color(52, 45, 71));
         searchbemp.setText("Search by Employee:");
         jPanel1.add(searchbemp);
         searchbemp.setBounds(20, 160, 150, 18);
