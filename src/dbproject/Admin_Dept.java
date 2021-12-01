@@ -31,7 +31,7 @@ public class Admin_Dept extends javax.swing.JFrame {
         try {
             db.openConnection();
         } catch (SQLException ex) {
-            Logger.getLogger(Ad_salary.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Ad_Salaryy.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         con = db.con;
